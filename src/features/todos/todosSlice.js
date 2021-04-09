@@ -1,6 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
-
-let nextId = 0;
+import { nanoid, createSlice } from "@reduxjs/toolkit";
 
 export const todosSlice = createSlice({
   name: "todos",
@@ -12,7 +10,7 @@ export const todosSlice = createSlice({
       },
       prepare: (text) => ({
         payload: {
-          id: nextId++,
+          id: nanoid(),
           text: text,
           completed: false,
           timestamp: new Date().toLocaleDateString(),
