@@ -9,7 +9,7 @@ export function TodoApp() {
   const dispatch = useDispatch();
 
   const onInsert = (text) => {
-    dispatch(addTodo({text}));
+    dispatch(addTodo(text));
   };
 
   const onToggle = (id) => {
