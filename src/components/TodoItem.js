@@ -15,6 +15,9 @@ const TodoItem = ({ task, onToggle, onRemove }) => {
 
   return (
     <li>
+      <span>
+        {task.timestamp} :
+      </span>
       <span style={textStyle} onClick={handleOnToggle}>
         {task.text}
       </span>

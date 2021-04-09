@@ -15,7 +15,7 @@ export const todosSlice = createSlice({
           id: nextId++,
           text: text,
           completed: false,
-          timestampe: Date.now(),
+          timestamp: Date.now(),
         },
       }),
     },
